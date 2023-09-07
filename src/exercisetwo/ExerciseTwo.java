@@ -15,6 +15,13 @@ public class ExerciseTwo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Archon wisdom = new Archon("Nahida");
+        Archon justice = new Archon("Furina");
+        Archon eternity = new Archon("Raiden");
+        
+        Song halloates = new Song("Out of Touch");
+        Song astley = new Song("Never Gonna Give You Up");
     }
     
 }

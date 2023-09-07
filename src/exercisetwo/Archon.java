@@ -10,4 +10,9 @@ package exercisetwo;
  */
 public class Archon {
     
+    private String name;
+    
+    public Archon(String name){
+        this.name = name;
+    }
 }

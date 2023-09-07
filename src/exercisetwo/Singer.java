@@ -10,4 +10,21 @@ package exercisetwo;
  */
 public class Singer {
     
+    String name;
+    int noOfPerformances;
+    double earnings;
+    Song favoriteSong;
+    
+    public Singer(String name){
+        this.name = name;
+    }
+    
+    public void changeFavSong(Song newSong){
+        this.favoriteSong = newSong;
+    }
+    
+    public void performForAudience(int audNumber){
+        this.noOfPerformances++;
+        this.earnings += 100*audNumber;
+    }
 }
