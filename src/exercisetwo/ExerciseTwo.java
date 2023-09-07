@@ -22,6 +22,14 @@ public class ExerciseTwo {
         
         Song halloates = new Song("Out of Touch");
         Song astley = new Song("Never Gonna Give You Up");
+        
+        Singer flumpool = new Singer("Flumpool");
+        
+        flumpool.favoriteSong = halloates;
+        System.out.println(flumpool.earnings);
+        flumpool.performForAudience(12);
+        System.out.println(flumpool.earnings);
+        flumpool.changeFavSong(astley);
     }
     
 }
