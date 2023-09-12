@@ -14,6 +14,7 @@ public class Singer {
     private int noOfPerformances;
     private double earnings;
     private Song favoriteSong;
+    private static int totalPerformances = 0;
     
     public Singer(String name){
         this.name = name;
@@ -24,8 +25,16 @@ public class Singer {
     }
     
     public void performForAudience(int audNumber){
+        totalPerformances++;
         this.noOfPerformances++;
         this.earnings += 100*audNumber;
+    }
+    
+    public void performForAudience(int audNumber, int noOfSingers, Singer otherSinger){
+        totalPerformances+= noOfSingers;
+        this.noOfPerformances++;
+        this.earnings += 100*audNumber/noOfSingers;
+        otherSinger.earnings += 100*audNumber/noOfSingers;
     }
     
     public String getName(){

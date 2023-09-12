@@ -24,12 +24,16 @@ public class ExerciseThree {
         Song astley = new Song("Never Gonna Give You Up");
         
         Singer flumpool = new Singer("Flumpool");
+        Singer move = new Singer("m.o.v.e");
         
         flumpool.setFavSong(halloates);
         System.out.println(flumpool.getEarnings());
         flumpool.performForAudience(12);
         System.out.println(flumpool.getEarnings());
         flumpool.changeFavSong(astley);
+        flumpool.performForAudience(10, 2, move);
+        System.out.println(flumpool.getEarnings());
+        System.out.println(move.getEarnings());
     }
     
 }
