@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package exercisetwo;
+package exercisethree;
 
 /**
  *
  * @author josue
  */
-public class Archon {
+public class Song {
     
-    private String name;
+    private String title;
     
-    public Archon(String name){
-        this.name = name;
+    public Song(String title){
+        this.title = title;
     }
 }
