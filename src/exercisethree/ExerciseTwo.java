@@ -25,10 +25,10 @@ public class ExerciseTwo {
         
         Singer flumpool = new Singer("Flumpool");
         
-        flumpool.favoriteSong = halloates;
-        System.out.println(flumpool.earnings);
+        flumpool.setFavSong(halloates);
+        System.out.println(flumpool.getEarnings());
         flumpool.performForAudience(12);
-        System.out.println(flumpool.earnings);
+        System.out.println(flumpool.getEarnings());
         flumpool.changeFavSong(astley);
     }
     

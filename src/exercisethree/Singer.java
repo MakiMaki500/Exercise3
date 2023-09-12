@@ -10,10 +10,10 @@ package exercisethree;
  */
 public class Singer {
     
-    String name;
-    int noOfPerformances;
-    double earnings;
-    Song favoriteSong;
+    private String name;
+    private int noOfPerformances;
+    private double earnings;
+    private Song favoriteSong;
     
     public Singer(String name){
         this.name = name;
@@ -26,5 +26,25 @@ public class Singer {
     public void performForAudience(int audNumber){
         this.noOfPerformances++;
         this.earnings += 100*audNumber;
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    
+    public void setFavSong(Song newFav){
+        this.favoriteSong = newFav;
+    }
+    
+    public Song getFavSong(){
+        return this.favoriteSong;
+    }
+    
+    public double getEarnings(){
+        return this.earnings;
+    }
+    
+    public void setEarnings(double newMoney){
+        this.earnings = newMoney;
     }
 }
