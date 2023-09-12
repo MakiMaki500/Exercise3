@@ -8,7 +8,7 @@ package exercisethree;
  *
  * @author josue
  */
-public class ExerciseTwo {
+public class ExerciseThree {
 
     /**
      * @param args the command line arguments
