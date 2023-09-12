@@ -34,6 +34,7 @@ public class ExerciseThree {
         flumpool.performForAudience(10, 2, move);
         System.out.println(flumpool.getEarnings());
         System.out.println(move.getEarnings());
+        System.out.println(Singer.getTotalPerformances());
     }
     
 }

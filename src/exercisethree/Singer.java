@@ -31,7 +31,7 @@ public class Singer {
     }
     
     public void performForAudience(int audNumber, int noOfSingers, Singer otherSinger){
-        totalPerformances+= noOfSingers;
+        totalPerformances++;
         this.noOfPerformances++;
         this.earnings += 100*audNumber/noOfSingers;
         otherSinger.earnings += 100*audNumber/noOfSingers;
@@ -55,5 +55,9 @@ public class Singer {
     
     public void setEarnings(double newMoney){
         this.earnings = newMoney;
+    }
+    
+    public static int getTotalPerformances(){
+        return totalPerformances;
     }
 }
